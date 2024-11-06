@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes Turísticos en Supatá</title>
+    <link rel="stylesheet" href="stylesplanes.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Seleccione un Plan Turístico</h1>
+        
+        <div class="plan">
+            <input type="radio" name="plan" id="familiar" value="familiar">
+            <label for="familiar">
+                <h2>Plan Turístico Familiar</h2>
+                <p><strong>Actividades:</strong></p>
+                <ul>
+                    <li>Caminata ecológica por la Reserva Natural Cachipay.</li>
+                    <li>Visita a las cascadas de la región.</li>
+                    <li>Tour cultural por el centro histórico de Supatá.</li>
+                    <li>Actividades al aire libre como picnic y pesca en los ríos locales.</li>
+                </ul>
+                <p><strong>Valor Aproximado:</strong> $400,000 COP por familia (2 adultos y 2 niños)</p>
+            </label>
+        </div>
+
+        <div class="plan">
+            <input type="radio" name="plan" id="individual" value="individual">
+            <label for="individual">
+                <h2>Plan Turístico Individual</h2>
+                <p><strong>Actividades:</strong></p>
+                <ul>
+                    <li>Senderismo y observación de aves en la Reserva Natural Cachipay.</li>
+                    <li>Recorrido en bicicleta de montaña por las rutas de Supatá.</li>
+                    <li>Degustación de productos locales y visita a una finca cafetera.</li>
+                </ul>
+                <p><strong>Valor Aproximado:</strong> $150,000 COP por persona</p>
+            </label>
+        </div>
+
+        <div class="plan">
+            <input type="radio" name="plan" id="empresarial" value="empresarial">
+            <label for="empresarial">
+                <h2>Plan Turístico Empresarial</h2>
+                <p><strong>Actividades:</strong></p>
+                <ul>
+                    <li>Jornada de team-building en la Reserva Natural Cachipay con actividades de integración y aventura.</li>
+                    <li>Reuniones y talleres en un eco-lodge con todos los servicios empresariales.</li>
+                    <li>Cena de networking con productos locales y espectáculos culturales.</li>
+                </ul>
+                <p><strong>Valor Aproximado:</strong> $800,000 COP por persona (precio puede variar según el tamaño del grupo y la duración del viaje)</p>
+            </label>
+        </div>
+
+        <button onclick="continuar()">Continuar</button>
+    </div>
+
+    <script>
+        function continuar() {
+            const selectedPlan = document.querySelector('input[name="plan"]:checked');
+            if (selectedPlan) {
+                alert("Comuníquese aquí para más información. -----> 322 2407614");
+            } else {
+                alert("Por favor, seleccione un plan antes de continuar.");
+            }
+        }
+    </script>
+</body>
+</html>

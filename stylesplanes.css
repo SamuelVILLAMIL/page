@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("./img/1.3.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    background: url("./img/1.png");
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #4D5D53;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+}
+
+.plan {
+    background: #fff;
+    border: 1px solid #dce2e6;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.plan label {
+    display: block;
+    cursor: pointer;
+}
+
+.plan h2 {
+    font-size: 1.5em;
+    color: #4D5D53;
+    margin-bottom: 0.5em;
+}
+
+.plan p, .plan ul {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.5;
+}
+
+.plan ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-left: 0;
+}
+
+.plan ul li {
+    margin-left: 10px;
+    text-align: left; /* Alinea el punto de la lista a la derecha */
+}
+
+.plan ul li div {
+    text-align: justify; /* Justifica el texto del contenido de la lista */
+}
+
+.plan input[type="radio"] {
+    margin-right: 10px;
+    accent-color: green;
+}
+
+button {
+    margin-top: 1em;
+    padding: 12px 24px;
+    font-size: 1em;
+    background-color: #4D5D53;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+button:hover {
+    background-color: green;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .plan h2 {
+        font-size: 1.3em;
+    }
+
+    button {
+        width: 100%;
+    }
+}
